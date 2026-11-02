@@ -1,0 +1,15 @@
+{
+  "name": "rang-haveli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rang Haveli - Rajasthani Heritage E-Commerce Web Application (MERN stack)",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently -n backend,frontend -c yellow,cyan \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "seed": "npm run seed --prefix backend",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
